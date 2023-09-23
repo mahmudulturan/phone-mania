@@ -19,6 +19,7 @@ const myCreatedRoute = createBrowserRouter([
         },
         {
             path: '/favourites',
+            loader: ()=> fetch('/phones.json'),
             element: <Favourites></Favourites>
         },
         {
